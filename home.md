@@ -2,13 +2,13 @@
 title: 首页
 description: 
 published: true
-date: 2024-06-19T17:02:20.611Z
+date: 2024-06-19T17:34:10.527Z
 tags: 
 editor: markdown
-dateCreated: 2024-06-19T04:21:12.645Z
+dateCreated: 2024-06-19T17:30:09.320Z
 ---
 
-**欢迎来到大天使百科。**
+# 欢迎来到大天使百科。
 
 由伟大的EOL执行公司大天使CEO甲虫提供，大天使百科致力于帮助新老玩家更充分的了解信息，理解各种复杂机制以及更轻松地在新伊甸中生活。
 
