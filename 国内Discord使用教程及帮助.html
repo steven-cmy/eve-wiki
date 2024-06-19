@@ -1,0 +1,71 @@
+<!--
+title: 国内Discord使用教程及帮助
+description: 
+published: true
+date: 2024-06-19T04:42:30.877Z
+tags: 
+editor: ckeditor
+dateCreated: 2024-06-19T04:29:24.639Z
+-->
+
+<p>Discord是一款闭源免费的实时通话聊天软件，主要用于游戏玩家，因其简单易用功能丰富而被广泛使用。</p>
+<p>由于某些原因，这款软件在国内被屏蔽，方法主要是DNS污染，2019年国庆后又新增了新的未知拦截方式（疑似TLS握手阻断）。**现在除了膜法以外暂无稳定解限的办法。**有些地区可以通过修改host直接访问，而在有些封锁严重的地区需要同时使用反代/魔法来使用，各地区的封锁也在不断变换，有可能每隔一段时间就会更换封锁手段。</p>
+<h2>解除限制</h2>
+<p>以下是几种常见方法：</p>
+<h3>使用UsbEAm Hosts Editor</h3>
+<p>这是一款由Dogfight360大神开发的软件，旨在消除游戏玩家面对的不必要的DNS污染。现新加入反代功能。需要注意的是这里的反代功能大陆大部分地区无法使用，本意是为网络速度过慢的地区加速登录更新用的。</p>
+<p>首先前往<a href="https://www.dogfight360.com/blog/475/">作者博客</a>下载最新版。</p>
+<p>下完后解压至任意目录。</p>
+<p>右键用管理员权限运行主程序</p>
+<figure class="image"><img src="/discord_tutorial/usbeam_tut_1.png"></figure>
+<p>点击左下角手柄按钮并选择[Discord – 语音&amp;游戏平台]&gt;[Discord登录/更新/加载/图片/游戏下载]（或者要使用作者的反代服务器的话请选择[Reverse Proxy – 反代加速（游戏平台）]&gt;[Discord]）</p>
+<figure class="image"><img src="/discord_tutorial/usbeam_tut_2.png"></figure>
+<p>左侧会列出所有可用的正常DNS解析服务器。然后点击检测延迟。（注：你的延迟会跟截图不一样，选择最低的即可）</p>
+<figure class="image"><img src="/discord_tutorial/usbeam_tut_3.png"></figure>
+<p>检测延迟并选择最低的那个，点击应用选中host就编辑完成了。（可点击编辑Host确认）</p>
+<figure class="image"><img src="/discord_tutorial/usbeam_tut_4.png"></figure>
+<figure class="image"><img src="/discord_tutorial/host_example.png"></figure>
+<h3>使用steamcommunity 302</h3>
+<p>Dogfight360大神编写的另一个软件。虽然本意是解锁Steam社区但是也加入了Discord反代功能，在host方法被封的现状下，这个方法应该是最简单的。<strong>需要注意的是因为此软件会安装作者自己签发的CA根证书，所以可能会造成安全隐患（例如</strong><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB"><strong>中间人攻击</strong></a><strong>），是否使用请自行判断！</strong></p>
+<p>下载地址：<a href="https://www.dogfight360.com/blog/686/">https://www.dogfight360.com/blog/686/</a>&nbsp;（下载文件可能会被浏览器拦截，因为使用了第三方证书）</p>
+<p>使用方法非常简单，打开设置勾选Discord后直接启动服务并且按照屏幕指示安装证书并允许通过防火墙即可。</p>
+<figure class="image"><img src="/discord_tutorial/steamcommunity_302_设置界面.jpg"></figure>
+<p>如有问题请参考博客下方的常见问题解决方案。</p>
+<h3>使用Watt Toolkit（原Steam++）</h3>
+<p>Watt Toolkit瓦特工具箱（原名Steam++）是一个开源跨平台的多功能 Steam 工具箱，可使Steam社区、Github、谷歌验证码等国内难以访问的网页正常访问，同时解决打开Discord之后软件一直卡在更新状态的这种情况。<strong>需要注意的是因为此软件会安装作者自己签发的CA根证书，所以可能会造成安全隐患（例如</strong><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB"><strong>中间人攻击</strong></a><strong>），是否使用请自行判断！同时，此软件的某些功能可能会违反EULA/ToS从而导致严重后果，使用前请先阅读并理解其风险（</strong><a href="https://steampp.net/faq#SecurityRisk"><strong>https://steampp.net/faq#SecurityRisk</strong></a><strong>）。</strong></p>
+<p>软件官网：<a href="https://steampp.net/">https://steampp.net/</a></p>
+<p>软件Github：<a href="https://github.com/BeyondDimension/SteamTools/releases/">https://github.com/BeyondDimension/SteamTools/releases/</a></p>
+<h3>手动编辑Host文件</h3>
+<p>此方法约等于使用UsbEAm Hosts Editor。</p>
+<p>直接修改host文件：</p>
+<p><code>C:\Windows\System32\drivers\etc\hosts</code></p>
+<p>添加或替换以下内容：</p>
+<pre><code class="language-plaintext">1.0.0.1 discordapp.com
+1.0.0.1 dl.discordapp.net
+1.0.0.1 gateway.discord.gg
+1.0.0.1 status.discordapp.com
+1.0.0.1 support.discordapp.com
+1.0.0.1 cdn.discordapp.com
+1.0.0.1 media.discordapp.net
+1.0.0.1 images-ext-2.discordapp.net
+1.0.0.1 images-ext-1.discordapp.net
+1.0.0.1 discordcdn.com
+1.0.0.1 discord.com</code></pre>
+<p>其中1.0.0.1可更换为任意能够访问且没被污染的DNS服务器或反代服务器。<i>注：Win7、Win8、Win10等系统可能需要管理员权限才可修改host，只需将Host文件先复制到桌面用记事本打开，修改并保存后将文件粘贴覆盖源文件。</i></p>
+<h3>魔法上网</h3>
+<p>膜法就不教了，网上教程多的是，这应该是最好（但不是最简单/便宜）的解决办法了。</p>
+<p><a href="https://web.archive.org/web/20201026103058/https://zhuanlan.zhihu.com/p/47048247">单独代理Discord的方法在这里</a></p>
+<h2>下载及注册账号</h2>
+<figure class="image"><img src="/discord_tutorial/discord注册界面.png">
+  <figcaption>Discord注册界面</figcaption>
+</figure>
+<p>解除限制后就可以下载软件了。</p>
+<p>前往<a href="https://discord.com/download">官网</a>或群文件下载安装程序并运行。</p>
+<p>更新完成后进入登录界面点击下方注册按钮。</p>
+<p>填入相应信息并注册然后记得验证邮箱。</p>
+<p>这样Discord账号的注册就完成了，强烈建议使用高强度密码并且设置两步验证以防账号丢失。</p>
+<h2>使用说明</h2>
+<p>Discord有中文界面。创建服务器也是完全免费的。权限系统简单明了。</p>
+<p><a href="https://support.discord.com/hc/zh-tw">官方教程</a>大部分是英文或者繁中，看不懂的话就去<a href="https://search.bilibili.com/all?keyword=discord">B站找视频</a>吧。</p>
+<p>还是不会的话可以看<a href="https://btfy.ur1.fun/?q=ZGlzY29yZOaAjuS5iOeUqA==">这里</a>。</p>
+<figure class="image"><img src="/discord_tutorial/discord界面-1024x722.png"></figure>
