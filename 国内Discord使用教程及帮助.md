@@ -26,21 +26,21 @@ Discord是一款闭源免费的实时通话聊天软件，主要用于游戏玩�
 
 右键用管理员权限运行主程序
 
-![](/discord_tutorial/usbeam_tut_1.png)
+![](/assets/images/discord_tutorial/usbeam_tut_1.png)
 
 点击左下角手柄按钮并选择\[Discord – 语音&游戏平台\]>\[Discord登录/更新/加载/图片/游戏下载\]（或者要使用作者的反代服务器的话请选择\[Reverse Proxy – 反代加速（游戏平台）\]>\[Discord\]）
 
-![](/discord_tutorial/usbeam_tut_2.png)
+![](/assets/images/discord_tutorial/usbeam_tut_2.png)
 
 左侧会列出所有可用的正常DNS解析服务器。然后点击检测延迟。（注：你的延迟会跟截图不一样，选择最低的即可）
 
-![](/discord_tutorial/usbeam_tut_3.png)
+![](/assets/images/discord_tutorial/usbeam_tut_3.png)
 
 检测延迟并选择最低的那个，点击应用选中host就编辑完成了。（可点击编辑Host确认）
 
-![](/discord_tutorial/usbeam_tut_4.png)
+![](/assets/images/discord_tutorial/usbeam_tut_4.png)
 
-![](/discord_tutorial/host_example.png)
+![](/assets/images/discord_tutorial/host_example.png)
 
 ### 使用steamcommunity 302
 
@@ -50,7 +50,7 @@ Dogfight360大神编写的另一个软件。虽然本意是解锁Steam社区但�
 
 使用方法非常简单，打开设置勾选Discord后直接启动服务并且按照屏幕指示安装证书并允许通过防火墙即可。
 
-![](/discord_tutorial/steamcommunity_302_设置界面.jpg)
+![](/assets/images/discord_tutorial/steamcommunity_302_设置界面.jpg)
 
 如有问题请参考博客下方的常见问题解决方案。
 
@@ -96,7 +96,7 @@ Watt Toolkit瓦特工具箱（原名Steam++）是一个开源跨平台的多功�
 
 ## 下载及注册账号
 
-![](/discord_tutorial/discord注册界面.png)
+![](/assets/images/discord_tutorial/discord注册界面.png)
 
 Discord注册界面
 
@@ -118,4 +118,4 @@ Discord有中文界面。创建服务器也是完全免费的。权限系统简�
 
 还是不会的话可以看[这里](https://btfy.ur1.fun/?q=ZGlzY29yZOaAjuS5iOeUqA==)。
 
-![](/discord_tutorial/discord界面-1024x722.png)
+![](/assets/images/discord_tutorial/discord界面-1024x722.png)
