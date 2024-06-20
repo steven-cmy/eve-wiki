@@ -2,7 +2,7 @@
 title: 首页
 description: 
 published: true
-date: 2024-06-19T17:34:10.527Z
+date: 2024-06-20T22:34:59.173Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-19T17:30:09.320Z
@@ -48,6 +48,6 @@ dateCreated: 2024-06-19T17:30:09.320Z
 
 虫洞洞口编号表
 
-未知空间天象详表
+[未知空间天象详表](/zh/未知空间天象详表)
 
 虫洞外观识别详表
