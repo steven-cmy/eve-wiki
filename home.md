@@ -2,7 +2,7 @@
 title: 首页
 description: 
 published: true
-date: 2024-08-05T04:01:46.817Z
+date: 2024-10-13T22:07:47.603Z
 tags: 
 editor: markdown
 dateCreated: 2024-06-19T17:30:09.320Z
@@ -20,12 +20,12 @@ dateCreated: 2024-06-19T17:30:09.320Z
 
 ## 教程
 
--   [国内Discord使用教程及帮助](/zh/国内Discord使用教程及帮助)
+-   [国内Discord使用教程及帮助](/archive/国内Discord使用教程及帮助)国内Discord使用教程及帮助
 
 ## 虫洞基础
 
--   [未知空间](/zh/未知空间)
--   [虫洞](/zh/虫洞)
+-   [未知空间](/教程/未知空间)
+-   [虫洞](/教程/虫洞)
 -   堡垒
 
 ## 虫洞战斗技巧
